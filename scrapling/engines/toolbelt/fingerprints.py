@@ -24,7 +24,7 @@ def generate_convincing_referer(url: str) -> str:
     :return: Google's search URL of the domain name
     """
     website_name = extract(url).domain
-    return f"https://www.google.com/search?q={website_name}"
+    return f"https://search.daum.net/search?nil_suggest=btn&w=tot&DA=SBC&q={website_name}"
 
 
 @lru_cache(1, typed=True)
